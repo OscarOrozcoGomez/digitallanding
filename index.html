@@ -138,35 +138,64 @@
       </div>
     </div>
   </div>
-  <div class="container valign-wrapper z-depth-5">
-    <div class="row">
-      <h4>Formulario de contacto</h4>
-      <form action="" class="">
-        <div class="row">
-          <div class="input-field col l12">
-            <i class="material-icons prefix">person</i>
-            <input id="Nombre" type="text" class="validate">
-            <label for="Nombre">Nombre</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col l12">
-            <i class="material-icons prefix">email</i>
-            <input id="Correo" type="text" class="validate">
-            <label for="correo">Correo Electronico</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col l12">
-            <i class="material-icons prefix">mode_edit</i>
-            <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-            <label for="icon_prefix2">Escribe tu mensaje</label>
-          </div>
-        </div>
-      </form>
-    </div>
 
+  <!-- Floating menu beggining -->
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">menu</i>
+    </a>
+    <ul>
+      <li>
+        <a class="btn-floating red modal-trigger" href="#modal1">
+          <i class="material-icons">
+            message
+          </i>
+        </a>
+      </li>
+    </ul>
   </div>
+  <!-- Floating menu beggining -->
+
+  <!-- Modal Structure beggining -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <h4>Formulario de contacto</h4>
+        <form action="" class="">
+          <div class="row">
+            <div class="input-field col l12">
+              <i class="material-icons prefix">person</i>
+              <input id="Nombre" type="text" class="validate">
+              <label for="Nombre">Nombre</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l12">
+              <i class="material-icons prefix">email</i>
+              <input id="Correo" type="text" class="validate">
+              <label for="correo">Correo Electronico</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col l12">
+              <i class="material-icons prefix">mode_edit</i>
+              <textarea id="textarea2" class="materialize-textarea" data-length="200"></textarea>
+              <label for="icon_prefix2">Escribe tu mensaje</label>
+            </div>
+          </div>
+          <div class="row right">
+            <button class="btn waves-effect waves-light red modal-close" type="submit" name="action">
+              Cancelar
+            </button>
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Structure end -->
 
 </body>
 <!-- Footer -->
@@ -229,4 +258,20 @@
     var elems = document.querySelectorAll('.parallax');
     var instances = M.Parallax.init(elems);
   });
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.fixed-action-btn');
+    var instances = M.FloatingActionButton.init(elems, {
+      direction: 'left',
+      hoverEnabled: false
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.modal');
+    var instances = M.Modal.init(elems);
+  });
+  document.addEventListener('DOMContentLoaded', function () {
+            var textNeedCount = document.querySelectorAll('#textarea2');
+            M.CharacterCounter.init(textNeedCount);
+});
 </script>
