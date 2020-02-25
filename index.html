@@ -2,276 +2,1522 @@
 <html lang="en">
 
 <head>
+  <!--Metas-->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>¿Aún sin sitio web?</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Studuio Landing page Template">
+  <title>¿Aún sin sitio Web?</title>
+
+  <!--External Stylesheets css-->
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!--elegant icon font -->
+  <link rel="stylesheet" href="assets/css/elegant-icons.css">
+  <!--Animate -->
+  <link rel="stylesheet" href="assets/css/animate.css">
+
+  <!-- Owl-carousel-->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+  <!-- venobox.css-->
+
+  <link rel="stylesheet" href="assets/css/venobox.css" type="text/css" />
+
+
+  <!-- Magnific Popup-->
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+  <!--Template Stylesheets css-->
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+  <!-- Fonts styles -->
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800" rel="stylesheet">
+
+
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+
+  <script src="assets/js/modernizr.js"></script>
+
+
+  <!--[if lt IE 9]>
+  <script src="assets/js/html5shiv.min.js"></script>
+  <script src="assets/js/respond.min.js"></script>
+<![endif]-->
 </head>
-<header>
-  <!-- Header -->
-  <nav class="light-blue">
-    <div class="nav-wrapper container">
-      <a href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li class="hoverable"><a href="#">Navbar Link</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
-<style>
-  .parallax-container {
-    height: 400px;
-  }
-</style>
 
-<body>
-  <div class="container">
-    <!-- Content -->
-    <div class="parallax-container center valign-wrapper">
+
+<body data-spy="scroll" data-target=".navbar-default" data-offset="100">
+
+  <!-- Page Preloader -->
+
+  <div id="loading-page">
+    <div id="loading-center-page">
+      <div id="loading-center-absolute">
+
+        <div class="loader"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Page Preloader -->
+
+
+  <!-- Page Content -->
+
+
+  <div class="warpper clearfix">
+
+    <!-- Animation -->
+
+    <div class="shapes-bg"></div>
+
+    <!-- Header -->
+
+    <header class="navbar-header">
+
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+
+          <a class="navbar-brand" href="#"><img src="assets/images/logo_vertical.jpg" alt="" width="101" height="34" class="rounded-circle"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon  icon_menu"></span>
+          </button>
+
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a data-scroll="" class="nav-link section-scroll" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll="" class="nav-link section-scroll" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll="" class="nav-link section-scroll" href="#services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll="" class="nav-link section-scroll" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll="" class="nav-link section-scroll" href="#team">Team</a>
+              </li>
+              <li class="nav-item">
+                <a data-scroll="" class="nav-link section-scroll" href="#blog">Blog</a>
+              </li>
+              <li>
+                <a data-scroll="" href="#testimonials" class="nav-link section-scroll">Testimonials</a>
+              </li>
+
+
+              <li>
+
+                <div class="btn-outer">
+
+                  <div class="dropdown">
+                    <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3"
+                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span
+                        class=" icon_search"></span></button>
+                    <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                      <li class="panel-outer">
+                        <div class="form-container">
+                          <form method="get" action="#">
+                            <div class="form-group">
+                              <input type="search" name="field-name" value="" placeholder="Search Here" required="">
+                              <button type="submit" class="search-btn"><span class=" icon_search"></span></button>
+                            </div>
+                          </form>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+
+                </div>
+
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+
+
+
+    </header>
+    <!--Header-->
+
+    <!--Begin Hero Section-->
+
+    <section id="home" class="pd-tp-80 hero">
+
+
+      <div class="video-mockup">
+        <img src="assets/images/image1.png" alt="">
+
+      </div>
+
+      <!--container-->
+
       <div class="container">
+
         <div class="row">
-          <div class="col s12 white-text">
-            <h2 class="teal-text teal-text lighten-2">Parallax Template</h2>
-            <p>A modern responsive front-end framework based on Material Design</p>
-            <a class="waves-effect waves-light btn-large teal lighten-2">Get Started</a>
+
+          <div class="col-md-7 col-xs-12 col-sm-7">
+
+            <div class="hero-text">
+
+              <h2>You’ re Looking for ?</h2>
+
+
+              <div id="typed-strings">
+
+                <b>Landing Pages</b>
+                <b>Logo Design</b>
+                <b>Illustrations</b>
+                <b>eCommerce</b>
+
+              </div>
+
+              <span id="typed"></span>
+
+              <p> We Are Creative Digital Agency</p>
+
+
+              <a href="" class="btn btn-red">About us </a>
+
+
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+      <!--container-->
+
+    </section>
+
+
+    <!--About-->
+
+
+    <section id="about-p">
+
+      <!--container-->
+
+      <div class="container">
+        <div class="row ">
+
+
+          <div class="col-md-4 col-lg-4">
+            <div class="icon-block ">
+
+              <img src="assets/images/browser.svg" alt="">
+              <h3>Web & Mobile</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque
+                laudantium </p>
+
+            </div>
+
+
+          </div>
+          <div class="col-md-4 col-lg-4">
+
+            <div class="icon-block ">
+
+              <img src="assets/images/startup.svg" alt="">
+              <h3>Optimisation</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque
+                laudantium
+              </p>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-md-4 col-lg-4">
+
+            <div class="icon-block ">
+
+              <img src="assets/images/bag.svg" alt="">
+              <h3>Branding</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolore mque
+                laudantium</p>
+
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+      <!--container-->
+
+    </section>
+
+    <!--Features-1-->
+
+
+    <section id="about" class="padd-80">
+
+      <!--container-->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6">
+
+            <div class="video-box">
+
+              <img src="assets/images/image-video.jpg" alt="">
+
+              <div class="ply-btn">
+                <a href="https://www.youtube.com/embed/7e90gBu4pas" class="video-modal"> <img
+                    src="assets/images/play.svg" alt=""></a>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="features-text">
+
+              <h2 class="title-h2">What we do ?</h2>
+              <span>About us</span>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
+                ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+              <a href="" class="btn btn-red">Get started</a>
+            </div>
+
           </div>
         </div>
+
+
       </div>
 
-      <div class="parallax">
-        <img
-          src="https://images.unsplash.com/photo-1429081172764-c0ee67ab9afd?dpr=1&auto=format&fit=crop&w=1500&h=927&q=80&cs=tinysrgb&crop=">
-      </div>
+      <!--container-->
 
-    </div>
+    </section>
 
-    <div class="row">
-      <div class="col m4 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <i class="material-icons">flash_on</i>
-          </h2>
-          <h5 class="center">Speeds up development</h5>
-          <p class="light">
-            We did most of the heavy lifting for you to provide a default stylings that incorporate our custom
-            components. Additionally, we refined animations and transitions to provide a smoother experience for
-            developers.
-          </p>
+    <!--Features-2-->
+
+
+    <section id="about-features" class="padd-80 bg-color">
+
+      <!--container-->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6">
+
+
+            <h2 class="title-h2"> Digital Design Studio </h2>
+            <p class="mg-tp-30">
+
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+              architecto beatae vitae dicta sunt explicabo.
+
+            </p>
+
+            <p class="mg-bt-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. </p>
+            <div class="row">
+              <div class="col-lg-6 col-md-6">
+                <ul class="list-p">
+
+                  <li>Excepteur sint occaecat</li>
+                  <li>Excepteur sint occaecat</li>
+                  <li>Excepteur sint occaecat</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <ul class="list-p">
+
+                  <li>Excepteur sint occaecat</li>
+                  <li>Excepteur sint occaecat</li>
+                  <li>Excepteur sint occaecat</li>
+                </ul>
+              </div>
+
+
+
+            </div>
+
+
+
+
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+
+            <h2 class="title-h2">What we offer ? </h2>
+            <p class="font-p mg-tp-30 mg-bt-30">Sed ut perspiciatis unde omnis iste natus error sit
+              voluptatem accusantium. Ut enim ad minim veniam, quis nostrud exercitation</p>
+
+            <div class="progrees-bar-content">
+              <div class="progrees-bar-text clearfix">
+                <span class=" float-left"> Web Hosting</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70
+                </div>
+              </div>
+
+            </div>
+            <div class="progrees-bar-content">
+              <div class="progrees-bar-text clearfix">
+                <span class=" float-left"> Web Design</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90
+                </div>
+              </div>
+
+            </div>
+
+            <div class="progrees-bar-content">
+              <div class="progrees-bar-text clearfix">
+                <span class=" float-left">Branding</span>
+              </div>
+
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60
+                </div>
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
+
       </div>
-      <div class="col m4 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <i class="material-icons">group</i>
-          </h2>
-          <h5 class="center">User Experience Focused</h5>
-          <p class="light">
-            By utilizing elements and principles of Material Design, we were able to create a framework that
-            incorporates components and animations that provide more feedback to users. Additionally, a single
-            underlying responsive system across all platforms allow for a more unified user experience.
-          </p>
+      <!--container-->
+
+    </section>
+
+
+    <!--Services-->
+
+    <section id="services" class="pd-tp-80 pd-bt-40">
+
+      <!--container-->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="row-centered">
+            <div class="col-centered col-lg-7">
+
+              <h2 class="title-h2">Our Services </h2>
+
+              <p class="font-p mg-tp-30 mg-bt-60">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab
+
+              </p>
+
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="service-block">
+
+              <img src="assets/images/magic-wand.svg" alt="">
+
+              <h3>Design & Coding</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore
+              </p>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="service-block">
+
+              <img src="assets/images/brain.svg" alt="">
+
+              <h3>Brainstorming</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore
+              </p>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="service-block">
+
+              <img src="assets/images/like.svg" alt="">
+
+              <h3>Social Media</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore
+              </p>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="service-block">
+
+              <img src="assets/images/chat.svg" alt="">
+
+              <h3>Consulting</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore
+              </p>
+
+
+            </div>
+
+          </div>
+
+
+          <div class="col-lg-4 col-md-4">
+            <div class="service-block">
+
+              <img src="assets/images/megaphone.svg" alt="">
+
+              <h3>Digital Marketing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore
+              </p>
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="service-block">
+
+              <img src="assets/images/group.svg" alt="">
+
+              <h3>Support</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore
+              </p>
+
+
+            </div>
+
+          </div>
+
         </div>
       </div>
-      <div class="col m4 s12">
-        <div class="icon-block">
-          <h2 class="center light-blue-text">
-            <i class="material-icons">settings</i>
-          </h2>
-          <h5 class="center">Easy to work with</h5>
-          <p class="light">
-            We have provided detailed documentation as well as specific code examples to help new users get started.
-            We are also always open to feedback and can answer any questions a user may have about Materialize.
-          </p>
+      <!--container-->
+
+    </section>
+
+    <!--Number bloc-->
+
+    <section id="numbers" class="padd-40 bg-color-1">
+
+      <!--container-->
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8 col-md-8">
+            <div class="row">
+              <div class="number-block  col-lg-3 col-md-3">
+                <span>132</span>
+
+                <small>Web Projects </small>
+
+              </div>
+              <div class="number-block   col-lg-3 col-md-3">
+                <span>64</span>
+
+                <small>Happy Customers</small>
+
+              </div>
+
+              <div class="number-block  col-lg-3 col-md-3">
+                <span>58</span>
+
+                <small>Increased Profits</small>
+
+              </div>
+
+              <div class="number-block  col-lg-3 col-md-3">
+                <span>970</span>
+
+                <small>Coding lines </small>
+
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+
+          <div class="col-lg-4 col-md-4">
+            <div class="number-text">
+              <p>An unmeasurable amount of awesomenimity something can produce. </p>
+            </div>
+
+          </div>
+
         </div>
+
+
       </div>
-    </div>
-  </div>
+      <!--container-->
+    </section>
 
-  <div class="parallax-container center valign-wrapper">
-    <div class="parallax"><img
-        src="https://images.unsplash.com/photo-1463780324318-d1a8ddc05a11?dpr=1&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=">
-    </div>
+    <!--Portfolio-->
 
-    <div class="container white-text">
-      <div class="row">
-        <div class="col s12">
-          <h5>A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-  </div>
+    <section id="portfolio" class="padd-80 ">
 
-  <div class="container center-align">
-    <div class="section">
-      <div class="row">
-        <div class="col s12">
-          <h4>Contact Us</h4>
-          <p class="light left-align">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam
-            pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros
-            justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum
-            sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper
-            molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris,
-            non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-            Curae;
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
+      <!--container-->
 
-  <div class="parallax-container center valign-wrapper">
-    <div class="parallax"><img
-        src="https://images.unsplash.com/photo-1489289827069-adf270f4f417?dpr=1&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=">
-    </div>
+      <div class="container">
 
-    <div class="container white-text">
-      <div class="row">
-        <div class="col s12">
-          <h5>A modern responsive front-end framework based on Material Design</h5>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="row">
 
-  <!-- Floating menu beggining -->
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">menu</i>
-    </a>
-    <ul>
-      <li>
-        <a class="btn-floating red modal-trigger" href="#modal1">
-          <i class="material-icons">
-            message
-          </i>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <!-- Floating menu beggining -->
+          <div class="row-centered">
+            <div class="col-centered col-lg-7">
 
-  <!-- Modal Structure beggining -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <div class="row">
-        <h4>Formulario de contacto</h4>
-        <form action="" class="">
-          <div class="row">
-            <div class="input-field col l12">
-              <i class="material-icons prefix">person</i>
-              <input id="Nombre" type="text" class="validate">
-              <label for="Nombre">Nombre</label>
+              <h2 class="title-h2">Our Projects </h2>
+
+              <p class="font-p mg-tp-30 mg-bt-60">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab
+
+              </p>
+
+            </div>
+
+            <div class="project-holder">
+
+              <!--Filter-->
+
+
+              <div class="filter-tab test">
+
+                <button class="btn filter-btn active" data-filter="all">All</button>
+                <button class="btn  filter-btn" data-filter="branding">Branding</button>
+                <button class="btn filter-btn" data-filter="Web-design">Web design</button>
+                <button class="btn filter-btn" data-filter="Graphic-design">Graphic Design</button>
+                <button class="btn  filter-btn" data-filter="other">Others</button>
+              </div>
+              <!--Filter-->
+
+              <div class="projetc-inner">
+
+                <div class="row">
+
+                  <!--project-->
+
+                  <div class=" col-lg-4 col-md-4">
+
+                    <div class="filter all branding  Graphic-design">
+
+                      <div class="project_product">
+
+                        <div class="project-holder">
+
+
+                          <img src="assets/images/portflio/branding-1.jpg" class="img-responsive" alt="" title="">
+
+                          <div class="text-holder">
+                            <div class="text-holder-outer">
+                              <div class="text-holder-inner">
+                                <h4>Branding Project</h4>
+
+                                <div class="icon-holder">
+                                  <a href="assets/images/portflio/branding-1.jpg" class="modal-venobox project-link">
+                                    <i class=" icon_zoom-in_alt"></i>
+                                  </a>
+
+                                  <a href="single-portflio.html" class=" project-link">
+                                    <i class="icon_link_alt"></i>
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--project-->
+
+                  <!--project-->
+
+                  <div class=" col-lg-8  col-md-8">
+                    <div class="filter all branding Graphic-design">
+
+                      <div class="project_product">
+
+                        <div class="project-holder">
+
+
+                          <img src="assets/images/portflio/branding-2.jpg" class="img-responsive" alt="" title="">
+
+                          <div class="text-holder">
+                            <div class="text-holder-outer">
+                              <div class="text-holder-inner">
+                                <h4>Branding Project</h4>
+
+                                <div class="icon-holder">
+                                  <a href="assets/images/portflio/branding-2.jpg" class="modal-venobox project-link">
+                                    <i class=" icon_zoom-in_alt"></i>
+                                  </a>
+
+                                  <a href="single-portflio.html" class=" project-link">
+                                    <i class="icon_link_alt"></i>
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--project-->
+
+                  <!--project-->
+                  <div class=" col-lg-4 col-md-4">
+                    <div class="filter all branding Web-design other Graphic-design">
+
+                      <div class="project_product">
+
+                        <div class="project-holder">
+
+
+                          <img src="assets/images/portflio/branding-3.jpg" class="img-responsive" alt="" title="">
+
+                          <div class="text-holder">
+                            <div class="text-holder-outer">
+                              <div class="text-holder-inner">
+                                <h4>Branding Project</h4>
+
+                                <div class="icon-holder">
+                                  <a href="assets/images/portflio/branding-3.jpg" class="modal-venobox project-link">
+                                    <i class=" icon_zoom-in_alt"></i>
+                                  </a>
+
+                                  <a href="single-portflio.html" class=" project-link">
+                                    <i class="icon_link_alt"></i>
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--project-->
+
+                  <!--project-->
+                  <div class=" col-lg-4 col-md-4">
+                    <div class="filter all Web-design  other Graphic-design ">
+
+                      <div class="project_product">
+
+                        <div class="project-holder">
+
+
+                          <img src="assets/images/portflio/branding-4.jpg" class="img-responsive" alt="" title="">
+
+                          <div class="text-holder">
+                            <div class="text-holder-outer">
+                              <div class="text-holder-inner">
+                                <h4>Branding Project</h4>
+
+                                <div class="icon-holder">
+                                  <a href="assets/images/portflio/branding-4.jpg" class="modal-venobox project-link">
+                                    <i class=" icon_zoom-in_alt"></i>
+                                  </a>
+
+                                  <a href="single-portflio.html" class=" project-link">
+                                    <i class="icon_link_alt"></i>
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--project-->
+
+                  <!--project-->
+                  <div class=" col-lg-4 col-md-4">
+                    <div class="filter all Web-design">
+
+                      <div class="project_product">
+
+                        <div class="project-holder">
+
+
+                          <img src="assets/images/portflio/Graphic-design-1.jpg" class="img-responsive" alt="" title="">
+
+                          <div class="text-holder">
+                            <div class="text-holder-outer">
+                              <div class="text-holder-inner">
+                                <h4>Branding Project</h4>
+
+                                <div class="icon-holder">
+                                  <a href="assets/images/portflio/Graphic-design-1.jpg"
+                                    class="modal-venobox project-link">
+                                    <i class=" icon_zoom-in_alt"></i>
+                                  </a>
+
+                                  <a href="single-portflio.html" class=" project-link">
+                                    <i class="icon_link_alt"></i>
+                                  </a>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+
+
+
+                        </div>
+
+
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--project-->
+
+
+                </div>
+
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col l12">
-              <i class="material-icons prefix">email</i>
-              <input id="Correo" type="text" class="validate">
-              <label for="correo">Correo Electronico</label>
+
+
+
+
+
+        </div>
+
+
+
+
+      </div>
+      <!--container-->
+
+    </section>
+
+    <!--Team-->
+
+    <section id="team" class="padd-80 bg-color">
+
+      <!--container-->
+      <div class="container">
+
+        <div class="row">
+
+          <div class="row-centered">
+            <div class="col-centered col-lg-7">
+
+              <h2 class="title-h2">Our Team</h2>
+
+              <p class="font-p mg-tp-30 mg-bt-60">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab
+
+              </p>
+
             </div>
           </div>
-          <div class="row">
-            <div class="input-field col l12">
-              <i class="material-icons prefix">mode_edit</i>
-              <textarea id="textarea2" class="materialize-textarea" data-length="200"></textarea>
-              <label for="icon_prefix2">Escribe tu mensaje</label>
+
+          <div class="col-lg-3 col-md-3">
+
+            <div class="team-bloc">
+              <img src="assets/images/team/team1.jpg" alt="">
+
+              <h3>Lawrence Soto</h3>
+              <span>Web designer</span>
+              <ul class="social-icon">
+                <li><a href=""><i class="social_facebook"></i></a></li>
+                <li><a href=""><i class="social_twitter"></i></a></li>
+                <li><a href=""><i class="social_linkedin"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+
+            <div class="team-bloc">
+              <img src="assets/images/team/team2.jpg" alt="">
+
+              <h3>Betty Pierce</h3>
+              <span>Marketing Consultant</span>
+              <ul class="social-icon">
+                <li><a href=""><i class="social_facebook"></i></a></li>
+                <li><a href=""><i class="social_twitter"></i></a></li>
+                <li><a href=""><i class="social_linkedin"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+          <div class="col-lg-3 col-md-3">
+
+            <div class="team-bloc">
+              <img src="assets/images/team/team3.jpg" alt="">
+
+              <h3>Bruce Wong</h3>
+              <span>Web developper</span>
+              <ul class="social-icon">
+                <li><a href=""><i class="social_facebook"></i></a></li>
+                <li><a href=""><i class="social_twitter"></i></a></li>
+                <li><a href=""><i class="social_linkedin"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-3">
+
+            <div class="team-bloc">
+              <img src="assets/images/team/team4.jpg" alt="">
+
+              <h3>Grace Brooks</h3>
+              <span>Product designer</span>
+              <ul class="social-icon">
+                <li><a href=""><i class="social_facebook"></i></a></li>
+                <li><a href=""><i class="social_twitter"></i></a></li>
+                <li><a href=""><i class="social_linkedin"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!--container-->
+    </section>
+
+    <!--Blog-->
+
+    <section id="blog" class="padd-80">
+
+      <!--container-->
+      <div class="container">
+
+        <div class="row">
+
+          <div class="row-centered">
+            <div class="col-centered col-lg-7">
+
+              <h2 class="title-h2">Our Blog</h2>
+
+              <p class="font-p mg-tp-30 mg-bt-60">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                laudantium, totam rem aperiam, eaque ipsa quae ab
+
+              </p>
+
             </div>
           </div>
-          <div class="row right">
-            <button class="btn waves-effect waves-light red modal-close" type="submit" name="action">
-              Cancelar
-            </button>
-            <button class="btn waves-effect waves-light" type="submit" name="action">
-              Enviar
-            </button>
+
+          <!--blog post-->
+
+          <div class="col-lg-4 col-md-4">
+
+            <div class="blog-inner">
+
+              <div class="blog-image">
+                <img src="assets/images/blog/blog1.jpg" alt="">
+
+                <div class="blog-date">
+                  <strong>15</strong>
+                  <span>APR</span>
+                </div>
+              </div>
+
+              <div class="blog-inner-content">
+
+                <h3><a href="single-post.html">Excepteur sint occaecat cupidatat non proident</a></h3>
+                <div class="comment-blog">
+
+                  <ul>
+                    <li><a href=""><i class="icon_ribbon_alt"></i>Strategy</a></li>
+                    <li><a href=""><i class=" icon_comment_alt"></i> 5 Comments</a></li>
+                  </ul>
+
+                </div>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                  audantium, totam rem aperiam,
+                </p>
+
+
+
+              </div>
+
+
+
+
+            </div>
+
           </div>
-        </form>
+
+          <!--blog post-->
+
+          <div class="col-lg-4 col-md-4">
+
+            <div class="blog-inner">
+
+              <div class="blog-image">
+                <img src="assets/images/blog/blog2.jpg" alt="">
+
+                <div class="blog-date">
+                  <strong>15</strong>
+                  <span>APR</span>
+                </div>
+              </div>
+
+              <div class="blog-inner-content">
+
+                <h3><a href="single-post.html">Excepteur sint occaecat cupidatat non proident</a></h3>
+                <div class="comment-blog">
+
+                  <ul>
+                    <li><a href=""><i class="icon_ribbon_alt"></i>Strategy</a></li>
+                    <li><a href=""><i class=" icon_comment_alt"></i> 5 Comments</a></li>
+                  </ul>
+
+                </div>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                  audantium, totam rem aperiam,
+                </p>
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+          <!--blog post-->
+
+          <div class="col-lg-4 col-md-4">
+
+            <div class="blog-inner">
+
+              <div class="blog-image">
+                <img src="assets/images/blog/blog3.jpg" alt="">
+
+                <div class="blog-date">
+                  <strong>15</strong>
+                  <span>APR</span>
+                </div>
+              </div>
+
+              <div class="blog-inner-content">
+
+                <h3><a href="single-post.html">Excepteur sint occaecat cupidatat non proident</a></h3>
+                <div class="comment-blog">
+
+                  <ul>
+                    <li><a href=""><i class="icon_ribbon_alt"></i>Strategy</a></li>
+                    <li><a href=""><i class=" icon_comment_alt"></i> 5 Comments</a></li>
+                  </ul>
+
+                </div>
+
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                  audantium, totam rem aperiam,
+                </p>
+
+
+
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+
+
+        </div>
+      </div>
+      <!--container-->
+    </section>
+
+    <!--testimonial-->
+    <section id="testimonials" class="padd-80 bg-color-1 clearfix">
+
+      <div class="col-left ">
+        <div class="col-left-inner">
+
+          <div class="quote">
+            <i class="icon_quotations"></i>
+
+          </div>
+
+          <h2 class="title-h2 color-white">What our clients are saying</h2>
+
+
+        </div>
+      </div>
+
+
+      <div class="col-right">
+
+        <div class="col-right-inner">
+
+
+          <div class="testimonial-caroussel carousel">
+
+            <div class="item">
+
+              <div class="item-inner">
+
+                <p>
+                  Nam libero tempore, cum soluta nobis est eligen di opt ios cumque nihil impedit quo
+                  minus id quo d maxime placeat facere possimus. Sed ut perspi ciatis unde omnis iste
+                  natus error sit </p>
+
+
+                <div class="rating">
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                </div>
+
+
+              </div>
+
+              <div class="avatar-item">
+
+                <img src="assets/images/testimonial/1.jpg" alt="">
+                <div class="avatar-info">
+
+                  <h4>Kathleen Mills</h4>
+                  <span>Digital constumer</span>
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+            <div class="item">
+
+              <div class="item-inner">
+
+                <p>
+                  Nam libero tempore, cum soluta nobis est eligen di opt ios cumque nihil impedit quo
+                  minus id quo d maxime placeat facere possimus. Sed ut perspi ciatis unde omnis iste
+                  natus error sit </p>
+
+
+                <div class="rating">
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                </div>
+
+
+              </div>
+
+              <div class="avatar-item">
+
+                <img src="assets/images/testimonial/2.jpg" alt="">
+                <div class="avatar-info">
+
+                  <h4>Tyler Bryant</h4>
+                  <span>Digital constumer</span>
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+            <div class="item">
+
+              <div class="item-inner">
+
+                <p>
+                  Nam libero tempore, cum soluta nobis est eligen di opt ios cumque nihil impedit quo
+                  minus id quo d maxime placeat facere possimus. Sed ut perspi ciatis unde omnis iste
+                  natus error sit </p>
+
+
+                <div class="rating">
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                  <span class="icon_star"></span>
+                </div>
+
+
+              </div>
+
+              <div class="avatar-item">
+
+                <img src="assets/images/testimonial/3.jpg" alt="">
+                <div class="avatar-info">
+
+                  <h4>Bruce Wong</h4>
+                  <span>Digital constumer</span>
+
+                </div>
+
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <!--sponsors clients-->
+
+    <section id="sponsors" class="pd-tp-80 pd-bt-60">
+
+      <!--container-->
+
+      <div class="container">
+        <div class="row ">
+          <div class="client-caroussel">
+
+            <div class="item">
+
+              <div class="client-item-img ">
+                <img src="assets/images/clients/logo1.png" class="img-responsive " alt=" " title=" ">
+              </div>
+            </div>
+            <div class="item">
+
+              <div class="client-item-img ">
+                <img src="assets/images/clients/logo2.png" class="img-responsive " alt=" " title=" ">
+              </div>
+            </div>
+
+            <div class="item">
+
+              <div class="client-item-img">
+                <img src="assets/images/clients/logo3.png " class="img-responsive " alt=" " title=" ">
+              </div>
+            </div>
+
+            <div class="item">
+
+              <div class="client-item-img">
+                <img src="assets/images/clients/logo4.png" class="img-responsive " alt=" " title=" ">
+              </div>
+            </div>
+
+            <div class="item">
+
+              <div class="client-item-img">
+                <img src="assets/images/clients/logo5.png" class="img-responsive " alt=" " title=" ">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </div>
+
+  <!--End page cotnent-->
+
+  <!--Footer-->
+
+  <footer class="footer">
+
+    <div class="footer-warpper">
+
+      <div class="footer-top">
+        <div class="container">
+
+
+          <div class="footer-top  clearfix">
+
+
+            <div class="footer-bottom-content clearfix">
+
+              <div class="row">
+
+                <div class="col-lg-3 col-md-3">
+
+
+
+                  <div class="logo-footer">
+                    <img src="assets/images/logo-white.png" alt="">
+
+                  </div>
+                  <div class="text-footer">
+                    <p>
+                      Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                      ad minim veniam.
+                    </p>
+                  </div>
+
+
+                  <ul class="list-social list-inline">
+                    <li>
+                      <a href="#" class="btn btn-circle btn-facebook">
+                        <i class="social_facebook "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle btn-twitter">
+                        <i class="social_twitter "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle btn-google-plus">
+                        <i class="social_googleplus "></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-circle btn-instgram">
+                        <i class="social_instagram"></i>
+                      </a>
+                    </li>
+
+                  </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-md-3">
+
+                  <h5>Menu</h5>
+
+                  <ul class="list-menu">
+                    <li>
+                      <a href="#">Home</a>
+                    </li>
+
+                    <li>
+                      <a href="#">About</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Services</a>
+                    </li>
+
+                    <li>
+                      <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                      <a href="#">Team</a>
+                    </li>
+                    <li>
+                      <a href="#">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#">Contact</a>
+                    </li>
+
+                  </ul>
+
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-3">
+
+                  <h5>Contact </h5>
+
+                  <ul class="list-contact">
+
+                    <li>
+                      71 Amsteroum Avenue Sedney, NY 10243
+                    </li>
+                    <li>+369 258 147 258</li>
+
+                    <li>s-tudio@contact.com</li>
+
+
+                  </ul>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+
+                  <h5>Subscribe to our newsletter</h5>
+
+                  <!-- Newsletter -->
+                  <div class="newsletter-block">
+
+
+                    <div class="subscribe-form">
+
+                      <form action="#" method="get" class="subscribe-mail">
+                        <div class="form-group ">
+                          <input type="email" class="form-control email-input" placeholder="Enter your email">
+                          <button type="submit" class="btn btn-subscribe bg-color-1">Subscribe</button>
+                        </div>
+                        <p class="error-message"></p>
+                        <p class="sucess-message"></p>
+
+                      </form>
+                    </div>
+                  </div>
+                  <!-- Newsletter -->
+
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <!-- COPYRIGHT TEXT -->
+
+        <div class="copyright">
+          <p>2018 © Copyright Design_GrapahMA All rights Reserved.</p>
+        </div>
+        <!-- COPYRIGHT TEXT -->
+
       </div>
     </div>
-  </div>
-  <!-- Modal Structure end -->
+
+  </footer>
+
+  <!--Footer -->
+
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-1.12.4.min.js"></script>
+
+  <!-- Bootstrap Plugins -->
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Template Plugins -->
+  <script src="assets/js/jquery.easing.js"></script>
+  <script src="assets/js/wow.min.js "></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <script src="assets/js/jquery.scrollUp.min.js"></script>
+  <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+  <script src="assets/js/typed.min.js"></script>
+  <script src="assets/js/text-typed.js"></script>
+  <script src="assets/js/venobox.min.js"></script>
+  <!-- Main js -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/shapes.js"></script>
+
+
 
 </body>
-<!-- Footer -->
-<footer class="page-footer orange">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Company Bio</h5>
-        <p class="grey-text text-lighten-4">
-          We are a team of college students working on this project like it's our full time job. Any amount would help
-          support and continue development on this project and is greatly appreciated.
-        </p>
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">Settings</h5>
-        <ul>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 4</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col l3 s12">
-        <h5 class="white-text">Connect</h5>
-        <ul>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 1</a>
-          </li>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 2</a>
-          </li>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 3</a>
-          </li>
-          <li>
-            <a href="#!" class="grey-text text-lighten-3">Link 4</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-      © 2017 Copyright Text
-    </div>
-  </div>
-</footer>
 
 </html>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(elems);
-  });
-  document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.fixed-action-btn');
-    var instances = M.FloatingActionButton.init(elems, {
-      direction: 'left',
-      hoverEnabled: false
-    });
-  });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems);
-  });
-  document.addEventListener('DOMContentLoaded', function () {
-            var textNeedCount = document.querySelectorAll('#textarea2');
-            M.CharacterCounter.init(textNeedCount);
-});
-</script>
