@@ -13,7 +13,8 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
+  <!-- boton flotante -->
+  <link rel="stylesheet" href="assets/css/floating_button.css">
   <!--elegant icon font -->
   <link rel="stylesheet" href="assets/css/elegant-icons.css">
   <!--Animate -->
@@ -90,7 +91,8 @@
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
 
-          <a class="navbar-brand" href="#"><img src="assets/images/logo_vertical.jpg" alt="" width="101" height="34" class="rounded-circle"></a>
+          <a class="navbar-brand" href="#"><img src="assets/images/logo_vertical.jpg" alt="" width="101" height="34"
+              class="rounded-circle"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon  icon_menu"></span>
@@ -1327,6 +1329,63 @@
   </div>
 
   <!--End page cotnent-->
+
+  <!-- Boton flotante inicio-->
+  <div class="menu pmd-floating-action" role="navigation">
+    <a href="javascript:void(0);"
+      class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default"
+      data-title="Formulario Contacto" data-toggle="modal" data-target="#largeModal">
+      <span class="pmd-floating-hidden">Dialpad</span>
+      <i class="material-icons">message</i>
+    </a>
+    <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary" data-title="Menu"
+      href="javascript:void(0);">
+      <span class="pmd-floating-hidden">Primary</span>
+      <i class="material-icons pmd-sm">add</i>
+    </a>
+  </div>
+  <!-- Boton flotante final-->
+
+  <!-- Large Modal inicio -->
+  <!-- large modal -->
+  <div class="modal fade" id="largeModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Formulario de contacto</h4>
+
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form action="">
+          <div class="modal-body">
+            <form method="post" data-form-title="CONTACT US">
+              <input type="hidden" data-form-email="true">
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" required="" placeholder="Name*"
+                  data-form-field="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" required="" placeholder="Email*"
+                  data-form-field="Email">
+              </div>
+              <div class="form-group">
+                <input type="tel" class="form-control" name="phone" placeholder="Phone" data-form-field="Phone">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" placeholder="Message" rows="7"
+                  data-form-field="Message"></textarea>
+              </div>
+              <div>
+                <button type="submit" class="btn btn-lg btn-danger">CONTACT US</button>
+              </div>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Large Modal final-->
 
   <!--Footer-->
 
