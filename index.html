@@ -362,11 +362,27 @@
       <!--container-->
 
     </section>
-
+    <style>
+      #numbers {
+        background-image: url(https://firebasestorage.googleapis.com/v0/b/hopscotch-8d180.appspot.com/o/images%2Fc2a-1A%2F0-1544115961055.jpg?alt=media&token=2790dd63-bc75-4c3f-9e80-0bc92f8771a8);
+        position: relative;
+    color: #fff;
+    z-index: 1;
+      }
+    #numbers:after{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(250, 98, 98, .45);
+    z-index: -1;
+    }
+    </style>
     <!--Number bloc-->
 
-    <section id="numbers" class="padd-40 bg-color-1"
-      style="background-image: url(https://firebasestorage.googleapis.com/v0/b/hopscotch-8d180.appspot.com/o/images%2Fc2a-1A%2F0-1544115961055.jpg?alt=media&token=2790dd63-bc75-4c3f-9e80-0bc92f8771a8);">
+    <section id="numbers" class="padd-40">
 
       <!--container-->
       <div class="container">
@@ -1196,7 +1212,7 @@
   <!--End page cotnent-->
 
   <!-- Boton flotante inicio-->
-  <div class="menu pmd-floating-action" role="navigation">
+  <div class="menu pmd-floating-action" role="navigation" style="z-index: 2;">
     <a href="javascript:void(0);"
       class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-default"
       data-title="Formulario Contacto" data-toggle="modal" data-target="#largeModal">
