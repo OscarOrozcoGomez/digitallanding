@@ -9,7 +9,7 @@
         $name = strip_tags(trim($_POST["name"]));
 		$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $phone = $_POST["phone"];
+        $phone = $_POST["telefono"];
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
