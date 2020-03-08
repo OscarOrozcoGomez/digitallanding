@@ -4,62 +4,109 @@
 <link rel="stylesheet" type="text/css" href="style/css2.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 <script>
-	var ajax = {
-		isSubmiting: false,
-		send: function() {
-			
-			if(ajax.isSubmiting == false) {
-				ajax.isSubmiting = true;
-				
-				var userName = $("input[name=name]").val();
-				var userEmail = $("input[name=email]").val();
-				var userComments = $("textarea").val();
-				
-				if(userName == "" || userEmail == "" || userComments == "")
-					alert("Form not complete");
-				else {
-					
-					ajax.SetText("Sending...");
-					$.post("sendmail.php", {
-						name: userName, email: userEmail, comments: userComments	
-					}, function(data) {
-						if(data == "true") {
-							ajax.SetText("Sent!");	
-						} else {
-							ajax.SetText("Send mail");
-							alert(data);	
-						}
-						
-						ajax.isSubmiting = false;
-					});
-				}
-			}
-			else alert("You can only send 1 email at a time");
-		},
-		SetText: function(text) {
-			$("input[type=button]").val(text);
-		}
-	}
+var contact = {
+  init: function() {
+    $form = $('form#contact-form'),
+      $errorStatus = $('.error-status');
+
+    $form.submit(function(e) {
+      e.preventDefault();
+      // lawls you can't submit a form from codepen, sillypants!
+      // contact.submitForm();
+    });
+  },
+
+  error: function(selector, msg) {
+    selector.html(msg);
+  },
+
+  checkSpam: function() {
+    if ($('#spam').val() != 4 || $('#hidden-spam').val() != '') {
+      // fake confirm msg to fool TEH SPAMBAWTS
+      $('body').append('<p class="antispam">Your email has been sent!</p>');
+      return false;
+    } else {
+      return true;
+    }
+  },
+
+  submitForm: function() {
+    if (contact.checkSpam()) {
+      contact.error($errorStatus, 'Processing...');
+
+      $.ajax({
+
+        type: 'POST',
+        url: $form.attr('action'),
+        data: $form.serialize()
+
+      }).done(function(response) {
+
+        // Set the message text.
+        contact.error($errorStatus, response);
+
+        // Clear the form.
+        $('#name').val('');
+        $('#email').val('');
+        $('#message').val('');
+        $('#spam').val('');
+
+        $errorStatus.addClass('success');
+        $form.css('display', 'none');
+
+      }).fail(function(data) {
+
+        // Set the message text.
+        if (data.responseText !== '') {
+          contact.error($errorStatus, data.responseText);
+        } else {
+          contact.error($errorStatus, 'Oops! An error occured. Please try again.');
+        }
+      });
+
+    } else {
+      contact.error($('#spam').next($('.error-msg')), 'Incorrect! You a robo, bro?');
+    }
+  }
+}
+
+$(document).ready(function() {
+  if ($('form#contact-form').length) {
+    contact.init();
+  } else {
+    return;
+  }
+});
 </script>
 </head>
 
-<body>
-	<div id="wrapper">
-		<div id="title">
-			<p>PHP AJAX Email</p>
-		</div>
-		<div id="content">
-			<p>Name:<br />
-			<input type="text" class="txtbox" name="name" placeholder="Name"></p>
-			<p>Email:<br />
-			<input type="text" class="txtbox" name="email" placeholder="Email"></p>
-			<p>Comments:<br />
-			<textarea name="comments"></textarea></p>
-			<input type="button" value="Send mail" onClick="ajax.send()" class="btn">
-		</div>
-		<div id="footer">
-			<p>Tutorial by Ben Shepherd</p><a href="http://www.youtube.com/benzilla04">http://www.youtube.com/benzilla04</a>
-		</div>
-	</div>
-</body>
+<form id="contact-form" method="post" action="mailer.php">
+  <div class="field">
+    <label for="name">Name</label>
+    <input type="text" id="name" class="contact-field" name="name" placeholder="Enter Name" required>
+  </div>
+
+  <div class="field">
+    <label for="email">Email</label>
+    <input id="email" class="contact-field" name="email" type="email" placeholder="Enter Email" required>
+  </div>
+
+  <div class="field">
+    <label for="message">Message</label>
+    <textarea id="message" class="contact-field" name="message" placeholder="Enter Message" required></textarea>
+  </div>
+
+  <p class="antispam"><input id="hidden-spam" type="text" /></p>
+
+  <div class="field">
+    <label for="spam">*What is 2 + 2 (Anti-spam)</label>
+    <input type="number" pattern="[0-9]*" id="spam" class="contact-field" value="" placeholder="Enter answer..." required>
+    <div class="error-msg"></div>
+  </div>
+
+  <div>
+    <input class="btn" id="submit" name="submit" type="submit" value="Submit">
+  </div>
+  
+  <div class="error-status"></div>
 </html>
