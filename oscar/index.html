@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>PHP AJAX Email</title>
+<link rel="stylesheet" type="text/css" href="style/css2.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+	var ajax = {
+		isSubmiting: false,
+		send: function() {
+			
+			if(ajax.isSubmiting == false) {
+				ajax.isSubmiting = true;
+				
+				var userName = $("input[name=name]").val();
+				var userEmail = $("input[name=email]").val();
+				var userComments = $("textarea").val();
+				
+				if(userName == "" || userEmail == "" || userComments == "")
+					alert("Form not complete");
+				else {
+					
+					ajax.SetText("Sending...");
+					$.post("sendmail.php", {
+						name: userName, email: userEmail, comments: userComments	
+					}, function(data) {
+						if(data == "true") {
+							ajax.SetText("Sent!");	
+						} else {
+							ajax.SetText("Send mail");
+							alert(data);	
+						}
+						
+						ajax.isSubmiting = false;
+					});
+				}
+			}
+			else alert("You can only send 1 email at a time");
+		},
+		SetText: function(text) {
+			$("input[type=button]").val(text);
+		}
+	}
+</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="title">
+			<p>PHP AJAX Email</p>
+		</div>
+		<div id="content">
+			<p>Name:<br />
+			<input type="text" class="txtbox" name="name" placeholder="Name"></p>
+			<p>Email:<br />
+			<input type="text" class="txtbox" name="email" placeholder="Email"></p>
+			<p>Comments:<br />
+			<textarea name="comments"></textarea></p>
+			<input type="button" value="Send mail" onClick="ajax.send()" class="btn">
+		</div>
+		<div id="footer">
+			<p>Tutorial by Ben Shepherd</p><a href="http://www.youtube.com/benzilla04">http://www.youtube.com/benzilla04</a>
+		</div>
+	</div>
+</body>
+</html>
