@@ -9,11 +9,11 @@
         $name = strip_tags(trim($_POST["name"]));
 		$name = str_replace(array("\r","\n"),array(" "," "),$name);
         $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
-        $phone = strip_tags(trim($_POST["phone"]));
+        $phone = $_POST["phone"];
         $message = trim($_POST["message"]);
 
         // Check that data was sent to the mailer.
-        if ( empty($name) OR empty($message) OR empty($phone)  OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        if ( empty($name) OR empty($message) OR empty($phone) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
             echo "Oops! Hubo algun problema con su envio. Por favor complete el formulario y intente de nuevo.";
