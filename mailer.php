@@ -16,8 +16,10 @@
         if ( empty($name) OR empty($message) OR empty($phone) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
-            echo "Oscar";
+            echo $name;
+            echo $email;
             echo $phone;
+            echo $message;
             echo "Oops! Hubo algun problema con su envio. Por favor complete el formulario y intente de nuevo.";
             exit;
         }
