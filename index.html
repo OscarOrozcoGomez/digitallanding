@@ -517,18 +517,19 @@
           </button>
         </div>
         <div class="modal-body">
-          <form method="post" data-form-title="CONTACT US" onsubmit="return false">
+          <div id="form-messages"></div>
+          <form method="post" id="ajax-contact" data-form-title="CONTACT US" action="mailer.php">
             <input type="hidden" data-form-email="true">
             <div class="form-group">
-              <input type="text" class="form-control" name="nombre" required="" placeholder="Nombre"
+              <input type="text" class="form-control" name="nombre" required="" id="name"placeholder="Nombre"
                 data-form-field="Name">
             </div>
             <div class="form-group">
-              <input type="email" class="form-control" name="email" required="" placeholder="E-mail"
+              <input type="email" class="form-control" name="email" id="email" required="" placeholder="E-mail"
                 data-form-field="Email">
             </div>
             <div class="form-group">
-              <input type="tel" class="form-control" name="telefono" placeholder="Phone" data-form-field="Telefono">
+              <input type="tel" class="form-control" name="telefono" id="phone" placeholder="Phone" data-form-field="Telefono">
             </div>
             <div class="form-group">
               <textarea class="form-control" name="mensaje" placeholder="Redacta tu mensaje" rows="7"
@@ -732,8 +733,7 @@
   <!-- Main js -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/shapes.js"></script>
-
-
+  <script src="app.js"></script>
 
 </body>
 
