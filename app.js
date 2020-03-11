@@ -1,3 +1,4 @@
+const ALEX_CONTACT_EMAIL = process.env.ALEX_CONTACT_EMAIL;
 $(function() {
 
 	// Get the form.
@@ -18,7 +19,8 @@ $(function() {
 		$.ajax({
 			type: 'POST',
 			url: $(form).attr('action'),
-			data: formData
+			data: formData, 
+			email: ALEX_CONTACT_EMAIL
 		})
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
