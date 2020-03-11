@@ -19,8 +19,7 @@ $(function() {
 		$.ajax({
 			type: 'POST',
 			url: $(form).attr('action'),
-			data: formData, 
-			email: ALEX_CONTACT_EMAIL
+			data: {"formData":formData, "recipient": ALEX_CONTACT_EMAIL}
 		})
 		.done(function(response) {
 			// Make sure that the formMessages div has the 'success' class.
